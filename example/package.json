@@ -1,0 +1,12 @@
+{
+  "private": true,
+  "scripts": {
+    "clean": "rm -rf .cache dist src/bin src/obj",
+    "build": "parcel build src/index.html",
+    "start": "parcel src/index.html"
+  },
+  "devDependencies": {
+    "parcel-transform-fable": "file:../",
+    "parcel": "^2.0.0-beta.1"
+  }
+}
