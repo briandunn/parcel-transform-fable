@@ -1,6 +1,6 @@
-import { Transformer } from "@parcel/plugin";
+const { Transformer } = require("@parcel/plugin");
 
-export default new Transformer({
+exports.default = new Transformer({
   async canReuseAST({ ast, options, logger }) {
     return false;
   },
@@ -12,7 +12,7 @@ export default new Transformer({
 
   async parse({ asset, config, logger, resolve, options }) {
     // ...
-    return ast;
+    return asset;
   },
 
   async transform({ asset, ast, config, logger, resolve, options }) {
