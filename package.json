@@ -1,0 +1,6 @@
+{
+  "name": "parcel-transformer-fable",
+  "dependencies": {
+    "@parcel/plugin": "^2.0.0-alpha.3"
+  }
+}

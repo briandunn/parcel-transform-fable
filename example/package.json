@@ -10,6 +10,7 @@
     "@parcel/packager-html": "^2.0.0-nightly.599",
     "@parcel/transformer-html": "^2.0.0-nightly.599",
     "@parcel/transformer-posthtml": "^2.0.0-nightly.599",
+    "parcel-transformer-fable": "file:../",
     "parcel": "^2.0.0-beta.1"
   }
 }
