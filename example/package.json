@@ -6,7 +6,10 @@
     "start": "parcel src/index.html"
   },
   "devDependencies": {
-    "parcel-transform-fable": "file:../",
+    "@parcel/optimizer-htmlnano": "^2.0.0-nightly.599",
+    "@parcel/packager-html": "^2.0.0-nightly.599",
+    "@parcel/transformer-html": "^2.0.0-nightly.599",
+    "@parcel/transformer-posthtml": "^2.0.0-nightly.599",
     "parcel": "^2.0.0-beta.1"
   }
 }
