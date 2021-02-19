@@ -1,6 +1,6 @@
 {
   "extends": ["@parcel/config-default"],
   "transformers": {
-    "*.fs": ["parcel-transformer-fable"]
+    "*.fsproj": ["parcel-transformer-fable"]
   }
 }

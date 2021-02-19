@@ -1,0 +1,12 @@
+[ignore]
+
+[include]
+
+[libs]
+
+[lints]
+
+[options]
+sharedmemory.heap_size=1073741824
+
+[strict]

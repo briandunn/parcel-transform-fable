@@ -1,12 +1,19 @@
-const { Transformer } = require("@parcel/plugin");
+// @flow strict-local
 
-exports.default = new Transformer({
-  async canReuseAST({ ast, options, logger }) {
+import startFable from "fable-compiler";
+import type { Asset, Transformer } from "@parcel/types";
+import { Transformer as transformer } from "@parcel/plugin";
+import { spawn } from "child_process";
+import path from "path";
+
+export default (new transformer({
+  async canReuseAST({ load }) {
     return false;
   },
 
   async loadConfig({ config, options, logger }) {
     // ...
+    // this one gets called
     return config;
   },
 
@@ -17,15 +24,10 @@ exports.default = new Transformer({
 
   async transform({ asset, ast, config, logger, resolve, options }) {
     // ...
+    console.log({ asset });
+    spawn("dotnet", ["fable", asset.filePath], {
+      cwd: path.dirname(asset.filePath),
+    });
     return [asset];
   },
-
-  async generate({ asset, ast, resolve, options }) {
-    // ...
-    return { code, map };
-  },
-
-  async postProcess({ assets, config, options, resolve, logger }) {
-    return assets;
-  },
-});
+}): Transformer);

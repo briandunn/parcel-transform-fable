@@ -1,0 +1,17 @@
+{
+  "version": 2,
+  "dgSpecHash": "fxKmvWLeunSBj7hplSa7MdO3/gC1uQHFPi95dkJ4vixknMZCn9h1Zhe4oL2xah1FN7eEc8hhLhpeUwTDIK8qsg==",
+  "success": true,
+  "projectFilePath": "/Users/brian/src/parcel-transform-fable/example/src/App.fsproj",
+  "expectedPackageFiles": [
+    "/Users/brian/.nuget/packages/fable.browser.blob/1.1.0/fable.browser.blob.1.1.0.nupkg.sha512",
+    "/Users/brian/.nuget/packages/fable.browser.dom/2.2.0/fable.browser.dom.2.2.0.nupkg.sha512",
+    "/Users/brian/.nuget/packages/fable.browser.event/1.2.1/fable.browser.event.1.2.1.nupkg.sha512",
+    "/Users/brian/.nuget/packages/fable.browser.webstorage/1.0.0/fable.browser.webstorage.1.0.0.nupkg.sha512",
+    "/Users/brian/.nuget/packages/fable.core/3.2.3/fable.core.3.2.3.nupkg.sha512",
+    "/Users/brian/.nuget/packages/fsharp.core/5.0.0/fsharp.core.5.0.0.nupkg.sha512",
+    "/Users/brian/.nuget/packages/microsoft.netcore.platforms/1.1.0/microsoft.netcore.platforms.1.1.0.nupkg.sha512",
+    "/Users/brian/.nuget/packages/netstandard.library/2.0.3/netstandard.library.2.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}

@@ -1,10 +1,23 @@
 {
   "name": "parcel-transformer-fable",
-  "main": "index.js",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "babel index.js -d dist",
+    "flow": "flow"
+  },
   "engines": {
     "parcel": "^2.0.0-beta.1"
   },
   "dependencies": {
-    "@parcel/plugin": "^2.0.0-beta.1"
+    "@parcel/plugin": "^2.0.0-beta.1",
+    "core-js": "^3.9.0",
+    "fable-compiler": "^2.13.0"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.12.17",
+    "@babel/core": "^7.12.17",
+    "@babel/preset-env": "^7.12.17",
+    "@babel/preset-flow": "^7.12.13",
+    "flow-bin": "^0.145.0"
   }
 }
